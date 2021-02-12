@@ -1,0 +1,36 @@
+html,
+body {
+  font-family: arial, sans-serif;
+}
+
+nav {
+  background: #fff;
+  border-bottom: 5px blue solid;
+  max-height: 5%;
+  color: #252525;
+  cursor: pointer;
+  padding: 15px 1.5% 5px;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  overflow: hidden;
+}
+
+#mainBody {
+  width: 80%;
+  margin: auto;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+#mainBody .pad {
+  min-height: 1000px;
+}
+#mainBody div {
+  padding-bottom: 15px;
+}
+
+footer {
+  background: aquamarine;
+}
