@@ -9,19 +9,25 @@ export function Home() {
       <div id="mainBody">
         <div id="genOptions" class="indent">
           <select id="selectGenOptions">
-            <option value="spell.name">Spell name</option>
+            <option value="spell.name">Spell Name</option>
+            <option value="spell.skill">Spell Skill</option>
           </select>
           &nbsp;is <input id="genOptionValue" type="text" />
           <button onClick={() => {
             getVals();
             addToSnippets(selectedOption, optionValue);}}>Show Snippet</button>
-          <button onClick={addToGearswap}>Add to Gearswap</button>
+          <button onClick={() => {
+            getVals();
+            addToGearswap(selectedOption, optionValue);}}>Add To Gearswap</button>
         </div>
-          <b class="heading">Code Snippet:</b>
+
+        <b class="heading">Code Snippet:</b>
         <div id="genSnippets" class = "indent">
 
         </div>
-        <div id="genCode">
+
+        <b class="heading">Gearswap Collective:</b>
+        <div id="genCode" class = "indent">
 
         </div>
                 

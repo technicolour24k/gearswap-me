@@ -32,14 +32,14 @@ footer {
   margin: 15px 25px;
 }
 
-#genSnippets {
+#genSnippets,
+#genCode {
   border: black 1px solid;
   background: lightgrey;
   color: rgb(3, 100, 190);
   max-width: 65%;
-  max-height: 15vh;
 }
 
-#genSnippets .heading {
+.heading {
   color: black;
 }
