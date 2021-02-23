@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {ExternalLink} from './pageObjects';
-import Home from './Pages/Home';
+import {Home} from './Pages/Home';
 import Ethos from './Pages/Ethos';
 import Portfolio from './Pages/Portfolio';
 import ContactUs from './Pages/Contact';

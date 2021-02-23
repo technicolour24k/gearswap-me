@@ -1,17 +1,35 @@
 import React from 'react';
-import {Title} from '../pageObjects';
-import {properties} from '../Config/properties';
-import SkypeLogo from '../Images/Skype.svg';
+import {addToSnippets, addToGearswap} from '../funcs/genCode'
 
-function Home() {
+let selectedOption = '';
+let optionValue = '';
+
+export function Home() {
   return (
       <div id="mainBody">
-        <div id="one">
-            Stuff
+        <div id="genOptions" class="indent">
+          <select id="selectGenOptions">
+            <option value="spell.name">Spell name</option>
+          </select>
+          &nbsp;is <input id="genOptionValue" type="text" />
+          <button onClick={() => {
+            getVals();
+            addToSnippets(selectedOption, optionValue);}}>Show Snippet</button>
+          <button onClick={addToGearswap}>Add to Gearswap</button>
         </div>
-        <div id="two">More Stuff!</div>
+          <b class="heading">Code Snippet:</b>
+        <div id="genSnippets" class = "indent">
+
+        </div>
+        <div id="genCode">
+
+        </div>
+                
       </div>
   );
 }
 
-export default Home;
+function getVals() {
+  selectedOption = document.getElementById("selectGenOptions").value
+  optionValue = document.getElementById("genOptionValue").value
+}
