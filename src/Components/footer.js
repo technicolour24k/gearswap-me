@@ -4,7 +4,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-            Footer information goes here!
+            &copy;Me 2021.
     </footer>             
   );
 }
