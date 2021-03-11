@@ -23,17 +23,32 @@ nav a {
   min-height: 90vh;
 }
 
+#mainBody button {
+  margin-left: 10px;
+}
+
+#genFile p {
+  line-height: 0;
+}
+
+.newSection {
+  padding: 10px 0;
+}
+
 footer {
   background: aquamarine;
   min-height: 5vh;
 }
 
-.indent {
+.indent,
+#gearswapFunctions {
   margin: 15px 25px;
+  padding: 0 15px;
 }
 
 #genSnippets,
-#genCode {
+#genCode,
+#genFile {
   border: black 1px solid;
   background: lightgrey;
   color: rgb(3, 100, 190);
