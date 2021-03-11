@@ -64,14 +64,14 @@ footer {
 .radioOption {
   padding: 3px 15px;
   margin: 0 15px;
-  border: 2px blue solid;
+  border: 2px black solid;
   border-radius: 5px;
-  background-color: paleturquoise;
 }
 
-.radioOption input {
+input[type='radio'] {
+  display: none;
 }
 
-.radioOption input[type='radio']:checked + label {
+input[type='radio']:checked + label {
   background-color: palegreen;
 }

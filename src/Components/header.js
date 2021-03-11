@@ -1,10 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {ExternalLink} from './pageObjects';
 import {Home} from './Pages/Home';
-import Ethos from './Pages/Ethos';
-import Portfolio from './Pages/Portfolio';
-import ContactUs from './Pages/Contact';
 
 
 function Header() {
@@ -12,28 +9,17 @@ function Header() {
     <Router>
         <nav>
             <div id="name">
-                <ExternalLink url="https://www.google.co.uk" LinkText="Lua Maker" />
+                <ExternalLink url="https://docs.windower.net/addons/gearswap/reference/" LinkText="Gearswap User References" /> |
+                <ExternalLink url="https://www.lua.org/start.html" LinkText="LUA.org" />
             </div>
             <div id="navigation">
-                <Link to="/">Home</Link>
-                {/* <Link to="/ethos">Our Ethos</Link>
-                <Link to="/portfolio">Our Portfolio</Link>
-                <Link to="/contact">Contact</Link> */}
+                <ExternalLink url="https://windower.net/" LinkText="Windower.net" />
             </div>
         </nav>
         
         <Switch>
             <Route exact path="/">
                 <Home />
-            </Route>
-            <Route path="/ethos">
-                <Ethos />
-            </Route>
-            <Route path="/portfolio">
-                <Portfolio />
-            </Route>
-            <Route path="/contact">
-                <ContactUs />
             </Route>
         </Switch>
         
