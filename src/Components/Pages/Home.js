@@ -1,5 +1,6 @@
 import React from 'react';
 import {addToSnippets, addToGearswapCollective, addToGearswapFile} from '../funcs/genCode'
+import {RadioButton} from '../pageObjects'
 
 let selectedOption = '';
 let optionValue = '';
@@ -49,6 +50,14 @@ export function Home() {
               getVals();
               addToGearswapFile("Aftercast", selectedOption, optionValue,equipSet);}}>Add To Gearswap File as Aftercast function</button>
             </div>
+
+          <div id="predefinedOptions">
+            <p class="heading"><strong>Useful predefined options:</strong></p>
+            <div id="radioOptions" class="indent">
+                <RadioButton label="If spell/action has a set" id="ifSetExists" name="usefulSnippets" value="sets[spell.name]" />
+                <RadioButton label="Testing!" id="Tester" name="usefulSnippets" value="sets.test" />
+            </div>
+          </div>
 
         <b class="heading">Code Snippet:</b>
         <div id="genSnippets" class = "indent">
